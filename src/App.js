@@ -1,36 +1,64 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
+import ListItem from './ListItem'
+import { v4 as uuidv4 } from 'uuid'
 
 function App() {
-  const [input, setInput] = useState('');
-  const [list, setList] = useState([]);
+  const [input, setInput] = useState('')
+  const [list, setList] = useState([])
 
-  const addToList = (item) => {
-    setList(...list, item);
-  };
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setList([...list, input]);
-    setInput('');
-  };
+    e.preventDefault()
+    setList([...list, { input, count: 1, id: uuidv4() }])
+    setInput('')
+  }
+  const increment = (id) => {
+    setList(
+      list.map((item) => {
+        if (item.id === id) {
+          return { ...item, count: item.count + 1 }
+        }
+        return item
+      })
+    )
+  }
+  const decrement = (id) => {
+    setList(
+      list.map((item) => {
+        if (item.id === id) {
+          return { ...item, count: item.count - 1 }
+        }
+        return item
+      })
+    )
+  }
 
   return (
-    <div className="App">
+    <div className='App'>
       <h2>Garden List</h2>
       <form onSubmit={handleSubmit}>
         <input
           value={input}
-          type="text"
+          type='text'
           onChange={(e) => setInput(e.target.value)}
         />
       </form>
       <ul>
-        {list.map((item, x) => {
-          return <li key={x}> {item}</li>;
+        {list.map((item) => {
+          return (
+            <ListItem
+              increment={increment}
+              decrement={decrement}
+              name={item.input}
+              count={item.count}
+              id={item.id}
+              key={item.id}
+            />
+          )
         })}
       </ul>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
