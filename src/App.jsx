@@ -41,11 +41,14 @@ function App() {
           value={input}
           type='text'
           onChange={(e) => setInput(e.target.value)}
-        />
+        />{' '}
+        Add New Item
       </form>
+      <h2>Need these</h2>
       <ul>
-        {list.map((item) => {
-          return (
+        {list
+          .filter((item) => item.count > 0)
+          .map((item) => (
             <ListItem
               increment={increment}
               decrement={decrement}
@@ -54,8 +57,22 @@ function App() {
               id={item.id}
               key={item.id}
             />
-          )
-        })}
+          ))}
+      </ul>
+      <h2>Dont need these</h2>
+      <ul>
+        {list
+          .filter((item) => item.count <= 0)
+          .map((item) => (
+            <ListItem
+              increment={increment}
+              decrement={decrement}
+              name={item.input}
+              count={item.count}
+              id={item.id}
+              key={item.id}
+            />
+          ))}
       </ul>
     </div>
   )
