@@ -1,15 +1,24 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import ListItem from './ListItem'
 import { v4 as uuidv4 } from 'uuid'
 
 function App() {
   const [input, setInput] = useState('')
-  const [list, setList] = useState([])
+  const [list, setList] = useState(() => {
+    if (localStorage.hdList) {
+      return JSON.parse(localStorage.hdList)
+    } else {
+      return []
+    }
+  })
+  useEffect(() => {
+    localStorage.setItem('hdList', JSON.stringify(list))
+  }, [list])
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setList([...list, { input, count: 1, id: uuidv4() }])
+    setList((list) => [...list, { input, count: 1, id: uuidv4() }])
     setInput('')
   }
   const increment = (id) => {
