@@ -44,6 +44,7 @@ function App() {
 
   return (
     <div className='App'>
+      <h2>todo - add colors, add delete</h2>
       <h2>Garden List</h2>
       <form onSubmit={handleSubmit}>
         <input
