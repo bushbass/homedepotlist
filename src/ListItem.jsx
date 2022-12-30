@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ListItem({ name, count, id, increment, decrement }) {
+function ListItem({ name, count, id, increment, decrement, deleteItem }) {
   return (
     <li>
       <span className='buttons'>
@@ -13,6 +13,7 @@ function ListItem({ name, count, id, increment, decrement }) {
         )}
       </span>
       <span>{name}</span>
+      {count < 1 && <button onClick={() => deleteItem(id)}>delete</button>}
     </li>
   )
 }

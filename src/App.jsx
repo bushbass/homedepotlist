@@ -42,6 +42,12 @@ function App() {
     )
   }
 
+  const deleteItem = (id) => {
+    const filteredList = list.filter((item) => item.id != id)
+    localStorage.setItem('hdList', JSON.stringify(filteredList))
+    setList(filteredList)
+  }
+
   return (
     <div className='App'>
       <h2>todo - add colors, add delete</h2>
@@ -77,6 +83,7 @@ function App() {
             <ListItem
               increment={increment}
               decrement={decrement}
+              deleteItem={deleteItem}
               name={item.input}
               count={item.count}
               id={item.id}
