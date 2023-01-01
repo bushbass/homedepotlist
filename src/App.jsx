@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import ListItem from './ListItem'
 import { v4 as uuidv4 } from 'uuid'
-
+import defaultItemsList from './defaultItemsList'
 function App() {
-  const initailState = [
+  const defaultItemsList = [
     {
       input: 'cheap topsoil',
       count: 1,
@@ -36,7 +36,7 @@ function App() {
     if (localStorage.hdList) {
       return JSON.parse(localStorage.hdList)
     } else {
-      return initailState
+      return defaultItemsList
     }
   })
   useEffect(() => {
@@ -77,7 +77,7 @@ function App() {
 
   const resetList = () => {
     localStorage.removeItem('hdList')
-    setList(initailState)
+    setList(defaultItemsList)
   }
 
   return (
