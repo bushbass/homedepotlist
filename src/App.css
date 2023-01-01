@@ -2,9 +2,10 @@
   margin: 10px;
   border: 10px solid rgb(255, 103, 31);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: white;
 }
 body {
   background-color: rgb(255, 103, 31);
+  border-radius: 70px;
 }
