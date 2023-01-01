@@ -1,6 +1,10 @@
 .App {
-  margin: 20px;
-  border: 25px solid rgb(255, 103, 31);
-  padding: 15px;
+  margin: 10px;
+  border: 10px solid rgb(255, 103, 31);
+  padding: 10px;
   border-radius: 10px;
+  background-color: white;
+}
+body {
+  background-color: rgb(255, 103, 31);
 }

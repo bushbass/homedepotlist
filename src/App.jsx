@@ -67,6 +67,7 @@ function App() {
         <button>Add New Item</button>
       </form>
       <h2>Need these</h2>
+
       <ul>
         {list
           .filter((item) => item.count > 0)
@@ -81,6 +82,7 @@ function App() {
             />
           ))}
       </ul>
+
       <h2>Dont need these</h2>
       <ul>
         {list
