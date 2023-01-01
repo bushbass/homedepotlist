@@ -44,7 +44,7 @@ function App() {
   }
 
   const deleteItem = (id) => {
-    const filteredList = list.filter((item) => item.id != id)
+    const filteredList = list.filter((item) => item.id !== id)
     localStorage.setItem('hdList', JSON.stringify(filteredList))
     setList(filteredList)
   }
