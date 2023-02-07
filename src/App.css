@@ -7,16 +7,16 @@
   max-width: 500px;
 }
 button {
-  width: 75px;
-  height: 75px;
+  min-width: 35px;
+  height: 35px;
 }
 
 li {
   padding-bottom: 20px;
 }
 .count {
-  padding: 25px;
+  padding: 5;
 }
 .description {
-  padding: 20px;
+  padding: 5px;
 }
