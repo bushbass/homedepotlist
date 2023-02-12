@@ -24,33 +24,29 @@ const defaultItemsList = [
         "count": 0,
         "id": "5b0b429c-439d-4810-bf46-8354760f1d6e"
     },
+    
     {
-        "input": "vigoro brown",
-        "count": 0,
-        "id": "06f1f757-b7f3-44af-8d8a-978e77019c70"
-    },
-    {
-        "input": "natures care garden",
+        "input": "nat. care garden",
         "count": 0,
         "id": "7942f00a-347a-4e56-9c17-48929d233e0b"
     },
     {
-        "input": "natures care compost",
+        "input": "nat. care compost",
         "count": 0,
         "id": "10da0cc0-60e3-4a25-a575-cee9cf1a826b"
     },
     {
-        "input": "MG garden small",
+        "input": "MG garden sm",
         "count": 0,
         "id": "90d8cbdb-4957-43e9-8c43-bcc9e7a830f7"
     },
     {
-        "input": "MG garden large",
+        "input": "MG garden lg",
         "count": 0,
         "id": "6584bd81-534f-4886-a3f7-1201aeb96891"
     },
     {
-        "input": "vigoro garden one foot",
+        "input": "vigoro garden 1 foot",
         "count": 0,
         "id": "d6be08e8-5f5e-4010-a4e5-279a774662dd"
     },
@@ -65,7 +61,7 @@ const defaultItemsList = [
         "id": "3d41a2bb-aa19-4207-921e-7093167c9881"
     },
     {
-        "input": "MG garden white bag",
+        "input": "MG garden white",
         "count": 0,
         "id": "12a601e6-eed2-4ef5-b3e2-99f8611096c8"
     },
@@ -80,37 +76,37 @@ const defaultItemsList = [
         "id": "1a4f02bb-7e2c-4785-ac7e-1b975afb9db6"
     },
     {
-        "input": "natures care organic potting",
+        "input": "nat. care organic pot",
         "count": 0,
         "id": "a454065a-c8a9-4a90-ad98-63f073639ec6"
     },
     {
-        "input": "vigoro potting blue 32qt",
+        "input": "vigoro pot blue 32qt",
         "count": 0,
         "id": "cce7d84d-946f-42ca-8ac3-a20e9af0be42"
     },
     {
-        "input": "MG indoor potting",
+        "input": "MG indoor pot",
         "count": 0,
         "id": "328d345d-d5fc-4fda-9803-84f19cb130fe"
     },
     {
-        "input": "MG potting yellow large",
+        "input": "MG pot yel lg",
         "count": 0,
         "id": "be82dc99-1374-4bbf-b969-0394b6afc0da"
     },
     {
-        "input": "MG potting yellow small",
+        "input": "MG pot yel sm",
         "count": 0,
         "id": "c4c1e2b3-9b40-490c-9e3d-c03830006154"
     },
     {
-        "input": "MG potting blue large",
+        "input": "MG pot blue lg",
         "count": 0,
         "id": "19bebd46-66a8-4577-82b6-fbe205c82ab1"
     },
     {
-        "input": "MG potting blue small",
+        "input": "MG pot blue sm",
         "count": 0,
         "id": "9160d7e8-db81-4382-b72d-2f5cb8341cea"
     },
