@@ -26,12 +26,12 @@ const defaultItemsList = [
   },
   {
     input: 'black cow garden',
-    count: 1,
+    count: 0,
     id: 'e67cb163-dda9-4557-ac5b-4d7caf5c69e1',
   },
   {
     input: 'kellog garden',
-    count: 1,
+    count: 0,
     id: '94840e49-756d-4426-9528-00bc1b7fb678',
   },
   {
@@ -66,12 +66,12 @@ const defaultItemsList = [
   },
   {
     input: 'black cow raised bed',
-    count: 1,
+    count: 0,
     id: 'eb4a0207-1bd8-4559-b1a3-3588d7e2375f',
   },
   {
     input: 'kellog raised bed',
-    count: 1,
+    count: 0,
     id: 'a6aebf96-512c-4083-be88-ef26fcdaeecb',
   },
   {
@@ -96,10 +96,10 @@ const defaultItemsList = [
   },
   {
     input: 'black cow pot',
-    count: 1,
+    count: 0,
     id: '2d0e1401-360d-4fef-8850-2414c732a653',
   },
-  { input: 'kellog pot', count: 1, id: 'def1d4cc-05c3-4cf9-82bf-6f0439774e7b' },
+  { input: 'kellog pot', count: 0, id: 'def1d4cc-05c3-4cf9-82bf-6f0439774e7b' },
   {
     input: 'nat. care organic pot',
     count: 0,
